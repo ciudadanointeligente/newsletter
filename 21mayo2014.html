@@ -10,40 +10,6 @@ title: Promesas 2014
 
 </div>
 
-<!-- CHART -->
-<style>
-  body {
-    overflow-y:scroll;
-  }
-
-  text {
-    font: 12px sans-serif;
-  }
-
-  #chart1 {
-    /*margin: 10px;*/
-    min-width: 100px;
-    min-height: 100px;
-  }
-
-  #chart1 svg {
-    height: 2000px;
-  }
-</style>
-
-<!-- GRAFICO -->
-
- <!--<div class="container">
-  <h3>¿De qué hablaron Bachelet y Piñera en sus primeros discursos?</h3>
-  <div id="chart1" class='with-3d-shadow with-transitions'><svg></svg></div>
-</div> -->
-
-<!-- FIN GRAFICO -->
-
-<script type="text/javascript" src="{{ site.url }}/js/d3.v3.js"></script>
-<script type="text/javascript" src="{{ site.url }}/js/nv.d3.js"></script>
-<script type="text/javascript" src="{{ site.url }}/js/tooltip.js"></script>
-<script type="text/javascript" src="{{ site.url }}/js/data-graph.js"></script>
 
 <div class="container">
   <h3>A continuación verás como se despliegan en tiempo real las promesas del primer discurso de 21 de Mayo de la Presidenta Bachelet <a href="#" id="refresh-promisses">Actualizar <i class="fa fa-refresh"></i></a></h3>
@@ -55,7 +21,7 @@ title: Promesas 2014
 <script type="text/javascript">
   window.onload = function() { init() };
 
-  var public_spreadsheet_url = '0Aq8cCRsryS2PdF91S0VkblE4YXNHWlk4QmJaYmdHSUE';
+  var public_spreadsheet_url = '0AkDCyKd1Csz5dGZZWFdGV0pDM0R6Q3V0cDQ4MFVkRVE';
 
   function init() {
     Tabletop.init( { key: public_spreadsheet_url,
