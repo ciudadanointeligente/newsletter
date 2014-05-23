@@ -39,7 +39,7 @@ function showInfo(data, tabletop) {
 
       var modal = '<div class="modal fade" id="myModal-'+i+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel">'+promesa+'</h4></div><div class="modal-body">'+detail+'</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button></div></div></div></div>';
 
-      var img_tag = '<img src="'+img_src+'" title="" />';
+      var img_tag = '<img src="'+img_src+'" title="'+promesa+'" class="img-responsive"/>';
 
       $(".fila"+fila).append("<div class='col-md-3'><div class='cajita'><span class='area'>"+area+"</span><h4 id='title'>"+promesa+"</h4>"+img_tag+"<p class='detail'>"+min_detail+view_more+"</p><ul id='type'>"+tipo+"</ul></div>"+modal+"</div>");
 
