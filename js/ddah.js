@@ -15,6 +15,7 @@ function showInfo(data, tabletop) {
       var tipo      = '';
       var tmp_tipo  = sheet.elements[i].tipo;
       var area      = sheet.elements[i].area;
+      var img_src   = sheet.elements[i].imagen;
       var view_more = ''
 
       var cnt_tipo = tmp_tipo.split(',');
@@ -38,7 +39,9 @@ function showInfo(data, tabletop) {
 
       var modal = '<div class="modal fade" id="myModal-'+i+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel">'+promesa+'</h4></div><div class="modal-body">'+detail+'</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button></div></div></div></div>';
 
-      $(".fila"+fila).append("<div class='col-md-3'><div class='cajita'><span class='area'>"+area+"</span><h4 id='title'>"+promesa+"</h4><ul id='social'><li>"+twitter+"</li></ul><p class='detail'>"+min_detail+view_more+"</p><ul id='type'>"+tipo+"</ul></div>"+modal+"</div>");
+      var img_tag = '<img src="'+img_src+'" title="" />';
+
+      $(".fila"+fila).append("<div class='col-md-3'><div class='cajita'><span class='area'>"+area+"</span><h4 id='title'>"+promesa+"</h4>"+img_tag+"<p class='detail'>"+min_detail+view_more+"</p><ul id='type'>"+tipo+"</ul></div>"+modal+"</div>");
 
       cnt++;
       
