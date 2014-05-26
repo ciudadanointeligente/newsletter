@@ -1,0 +1,406 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  background-color: #40BDF1;
+  color: #0F2356;
+}
+
+p { margin: 1em 0; }
+
+a         { color: #FFF; }
+a:hover   { color: #FFF; }
+/*a:visited { color: #006DAA; }*/
+
+/*H*/
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  font-weight: 700;
+  margin: 50px 0 0px;
+  line-height: 36px;
+}
+
+/*HEADER*/
+
+.header {
+  background-color: #0F2356;
+}
+
+h3.title {
+  float: left;
+  font-weight: 300;
+  margin: 5px 0 10px;
+}
+
+.nav {
+  float: right;
+  margin: 5px 0px 0px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  background-color: #08173A;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+  background-color: #08173A;
+  border-color: transparent;
+}
+
+.dropdown-menu {
+  background-color: #0F2356;
+  border: none;
+}
+
+.dropdown-menu>li>a {
+  color: #FFF;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  background-color: #08173A;
+  color: #fff;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+
+.ribbon {
+  width: 24%;
+  margin: 40px auto;
+  background: #FFF;
+  padding: 1px 0px 10px;
+  color: #40BDF1;
+  position: relative;
+}
+
+.ribbon:before {
+  content: url(../img/ribbon-before.png);
+  position: absolute;
+  left: -43px;
+  bottom: -23px;
+}
+
+.ribbon:after {
+  content: url(../img/ribbon-after.png);
+  position: absolute;
+  right: -43px;
+  bottom: -23px;
+}
+
+.ribbon h1 {
+  font-size: 28px;
+}
+
+.hero h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 42px;
+  width: 80%;
+  margin: 70px auto 20px;
+}
+
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.posts li {
+  line-height: 1.75em;
+}
+
+.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.footer .rss {
+  margin-top: 1.1em;
+  margin-right: -.2em;
+  float: right;
+}
+
+.footer .rss img {
+  border: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+/*GRAPH*/
+
+section.graph {
+  padding: 10px 0px 90px;
+  position: relative;
+}
+
+section.graph:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(229, 62, 62, 0);
+  border-bottom-color: #40BDF1;
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+svg text {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+}
+
+.tick line {
+  display: none;
+}
+
+div.legend {
+  float: right;
+  width: 360px;
+  padding: 10px 0px 34px 10px;
+  margin-bottom: -34px;
+  line-height: 16px;
+  border: 1px dashed rgb(255, 255, 255);
+}
+
+/*CAJITAS PROMESAS*/
+
+.red-background {
+  background: #E53E3E;
+  margin-top: 60px;
+  position: relative;
+}
+
+.red-background:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(229, 62, 62, 0);
+  border-bottom-color: #E53E3E;
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+.red-background h3 {
+  color: #fff;
+}
+
+.cajita {
+  background: rgba(255, 255, 255, 1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.cajita a {
+  color: #40BDF1;
+}
+
+p.detail {
+  font-size: 14px;
+}
+
+ul#social {
+  list-style: none;
+}
+
+ul#social a {
+  background: #40BDF1;
+  padding: 0px 7px 2px;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul#social a:hover {
+  background: #1795CF;
+}
+
+span.area {
+  color: #E53E3E;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+div#data-content {
+  margin: 50px 0;
+}
+
+/*50 promesas*/
+
+h4#title {
+  font-weight: 700;
+}
+
+#type li {
+  margin-bottom: 16px;
+}
+
+ul#type {
+  list-style: none;
+}
+
+a#refresh-promisses {
+  font-size: 14px;
+  font-weight: 500;
+  background: #1795CF;
+  padding: 2px 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+}
+
+a#refresh-promisses:hover {
+  background: #2BB3E2;
+}
+
+
+#type > .type-a, #type > .type-c, #type > .type-p, #type > .type-n {
+  position: relative;
+}
+
+#type > .type-a:after {
+  content: "DEL GOBIERNO ANTERIOR";
+  background: url('../img/sprite-estado.png') -4px 41px;
+  position: absolute;
+  top: 0;
+  right: -26px;
+  padding: 5px 9px 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#type > .type-c:after {
+  content: "50 PROMESAS";
+  background: url('../img/sprite-estado.png') 118px 124px;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  padding: 5px 9px 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/*programa gobierno*/
+#type > .type-p:after {
+  content: "PROGRAMA DE GOBIERNO";
+  background: url('../img/sprite-estado.png') 197px 210px;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  padding: 5px 6px 11px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/*nueva promesas*/
+#type > .type-n:after {
+  content: "NUEVA PROMESA";
+  background: url('../img/sprite-estado.png') 140px 291px;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  padding: 4px 8px 11px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.list-inline > li {
+  margin-top: 5px;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #0F2356;
+  padding: 40px 0px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer a {
+  color: #40BDF1;
+}
