@@ -46,6 +46,24 @@ title: FCI Newsletter
     $("#data-content").empty();
     init();
   });
+
+  $('.filtro').on('click', function(e){
+    e.preventDefault();
+    var aFilter = new Array('2014 T1','2014 T2');
+    var filter = $(this).data('filter');
+
+    aFilter.splice( $.inArray(filter, aFilter), 1 );
+
+    if( $.inArray(filter, aFilter) ) {
+
+      $('.'+filter).attr('style','display:block');
+
+      $.each(aFilter, function(index,value){
+        $('.'+value).attr('style','display:none');
+      });
+    }
+
+  });
 </script>
 <script type="text/javascript" src="{{ site.url }}/js/ddah.js"></script>
 
