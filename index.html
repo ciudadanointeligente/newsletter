@@ -3,7 +3,7 @@ layout: default
 title: FCI Newsletter
 ---
 <div class="container">
-  <div class="hero"><h2>FCI's Diary</h2>
+  <div class="hero"><h2>FCI's News</h2>
     <h3>What we have done this last three months?</h3>
     <h4>In this web site wee will report our last activities that are currently happening inside FCI. We will report our activities every three months, and advicing you via e-mail when the time comes.</h4>
 </div>
@@ -23,6 +23,7 @@ title: FCI Newsletter
    
   <ul class="list-inline">
       <li><a href="#" data-filter="first trimester 2014" class="label label-default filtro">First Trimester 2014</a></li>
+      <li><a href="#" data-filter="second trimester 2014" class="label label-default filtro">Second Trimester 2014</a></li>
   </ul>
 
   <div id="data-content"></div> 
@@ -51,7 +52,7 @@ title: FCI Newsletter
 
   $('.filtro').on('click', function(e){
     e.preventDefault();
-    var aFilter = new Array('first trimester 2014');
+    var aFilter = new Array('first trimester 2014','second trimester 2014');
     var filter = $(this).data('filter');
 
     aFilter.splice( $.inArray(filter, aFilter), 1 );
