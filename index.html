@@ -20,8 +20,8 @@ title: FCI Newsletter
   <h3>What we have done this last three months? </h3>
   
   <ul class="list-inline">
-      <li><a href="#" data-filter="First Trimester 2014" class="label label-default filtro">First Trimester 2014</a></li>
-      <li><a href="#" data-filter="Second Trimester 2014" class="label label-default filtro">Second Trimester 2014</a></li>
+      <li><a href="#" data-filter="first trimester 2014" class="label label-default filtro">First Trimester 2014</a></li>
+      <li><a href="#" data-filter="second trimester 2014" class="label label-default filtro">Second Trimester 2014</a></li>
   </ul>
 
   <div id="data-content"></div>
@@ -31,7 +31,8 @@ title: FCI Newsletter
 
 <script type="text/javascript" src="{{ site.url }}/js/tabletop.js"></script>
 <script type="text/javascript">
-  window.onload = function() { init() };
+
+ window.onload = function() { init() };
 
   var public_spreadsheet_url = '0AkDCyKd1Csz5dGZZWFdGV0pDM0R6Q3V0cDQ4MFVkRVE';
 
@@ -49,7 +50,7 @@ title: FCI Newsletter
 
   $('.filtro').on('click', function(e){
     e.preventDefault();
-    var aFilter = new Array('First Trimester 2014','Second Trimester 2014');
+    var aFilter = new Array('first trimester 2014','second trimester 2014');
     var filter = $(this).data('filter');
 
     aFilter.splice( $.inArray(filter, aFilter), 1 );
@@ -63,7 +64,8 @@ title: FCI Newsletter
       });
     }
 
-  });
+    
+  })
 </script>
 <script type="text/javascript" src="{{ site.url }}/js/ddah.js"></script>
 
