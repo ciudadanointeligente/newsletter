@@ -22,8 +22,8 @@ title: FCI Newsletter
   <div class="container">
    
   <ul class="list-inline">
-      <li><a href="#" data-filter="2014T1" class="label label-default filtro">First Trimester 2014</a></li>
-      <li><a href="#" data-filter="2014T2" class="label label-default filtro">Second Trimester 2014</a></li>
+      <li><a href="#" data-filter="2014t1" class="label label-default filtro">First Trimester 2014</a></li>
+      <li><a href="#" data-filter="2014t2" class="label label-default filtro">Second Trimester 2014</a></li>
   </ul>
 
   <div id="data-content"></div> 
@@ -52,7 +52,7 @@ title: FCI Newsletter
 
   $('.filtro').on('click', function(e){
     e.preventDefault();
-    var aFilter = new Array('2014T1','2014T2');
+    var aFilter = new Array('2014t1','2014t2');
     var filter = $(this).data('filter');
 
     aFilter.splice( $.inArray(filter, aFilter), 1 );
