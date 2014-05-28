@@ -39,13 +39,6 @@ h3 {
   line-height: 36px;
 }
 
-h4 {
-  font-weight: 700;
-  margin: 80px 0 40px;
-  line-height: 36px;
-  color: #f96033;
-}
-
 /*HEADER*/
 
 .header {
@@ -56,6 +49,13 @@ h3.title {
   float: left;
   font-weight: 300;
   margin: 5px 0 10px;
+}
+
+h3.encabezado{
+  float: right;
+  font-weight: 300;
+  margin: 80px 0 40px;
+  color: #40BDF1;
 }
 
 .nav {
