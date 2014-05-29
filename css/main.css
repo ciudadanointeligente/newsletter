@@ -17,8 +17,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0,0,0,.01) 0 0 1px;
-  background-color: #40BDF1;
-  color: #0F2356;
+  background-color: #A3D7DD;
+  color: #060626;
 }
 
 p { margin: 1em 0; }
@@ -42,7 +42,8 @@ h3 {
 /*HEADER*/
 
 .header {
-  background-color: #0F2356;
+  background-color: #060626;
+  padding: 10px 0;
 }
 
 h3.title {
@@ -52,7 +53,9 @@ h3.title {
 }
 
 h1.title{
-  color: #40BDF1;
+  color: #A3D7DD;
+  font-size: 70px;
+  font-weight: 300;
 }
 
 .nav {
@@ -81,6 +84,15 @@ h1.title{
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
   background-color: #08173A;
   color: #fff;
+}
+
+.newsletter-icon {
+  width: 100%;
+}
+
+.newsletter-icon img {
+  margin: 0 auto -60px;
+  display: block;
 }
 
 /*****************************************************************************/
@@ -116,12 +128,19 @@ h1.title{
   font-size: 28px;
 }
 
-.hero h2 {
-  text-align: center;
-  font-weight: 300;
-  font-size: 42px;
+.hero {
   width: 80%;
-  margin: 70px auto 20px;
+  margin: 100px auto 60px;
+  text-align: center;
+}
+
+.hero h3 {
+  font-size: 31px;
+}
+
+.hero h4 {
+  font-size: 21px;
+  font-weight: 300;
 }
 
 .posts {
@@ -244,6 +263,16 @@ div.legend {
   border: 1px dashed rgb(255, 255, 255);
 }
 
+/*FILTROS CAJAS*/
+
+.label-default {
+  background-color: #F8BD3B;
+}
+
+.label-default[href]:hover, .label-default[href]:focus {
+  background-color: #E6B13D;
+}
+
 /*CAJITAS PROMESAS*/
 
 .red-background {
@@ -275,6 +304,12 @@ div.legend {
   background: rgba(255, 255, 255, 1);
   padding: 15px;
   margin-bottom: 15px;
+  min-height: 290px;
+}
+
+ul#type {
+  margin: 0;
+  height: 0;
 }
 
 .cajita a {
@@ -302,7 +337,7 @@ ul#social a:hover {
 }
 
 span.area {
-  color: #E53E3E;
+  color: #F8BD3B;
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -394,11 +429,53 @@ a#refresh-promisses:hover {
   margin-top: 5px;
 }
 
+/*MODAL*/
+
+div.modal-content {
+  border-radius: 0px;
+  border: none;
+  background: #A3D7DD;
+  font-size: 14px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 15px 20px 0px;
+}
+
+.modal-header h4 {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.modal-footer {
+  margin-top: 0px;
+  border-top: none;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #F8BD3B;
+  border-color: transparent;
+  border-bottom: 2px solid #C98E0E;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  color: #fff;
+  background-color: #EEB22D;
+  border-color: transparent;
+  border-bottom: 2px solid #C98E0E;
+}
+
 /*FOOTER*/
 
 .footer {
-  background-color: #0F2356;
+  background-color: #060626;
   padding: 40px 0px;
+}
+
+.footer .container {
+  text-align: center;
 }
 
 .footer ul {
@@ -406,5 +483,9 @@ a#refresh-promisses:hover {
 }
 
 .footer a {
-  color: #40BDF1;
+  color: #78B9CB;
+}
+
+.footer a:hover {
+  color: #60A1B3;
 }
