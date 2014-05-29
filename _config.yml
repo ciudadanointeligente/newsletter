@@ -1,6 +1,6 @@
 name: Newsletter
 author: Fundación Ciudadano Inteligente
-# url: http://newsletter.ciudadanointeligente.org
-url: http://localhost:4000/
+url: http://newsletter.ciudadanointeligente.org
+# url: http://localhost:4000/
 markdown: redcarpet
 highlighter: true
